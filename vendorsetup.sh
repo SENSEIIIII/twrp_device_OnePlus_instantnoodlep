@@ -20,7 +20,6 @@ export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 
 # We have a/b partitions
 export OF_AB_DEVICE="1"
-export OF_VIRTUAL_AB_DEVICE=1
 
 # Screen specifications
 #export OF_SCREEN_H=1920
