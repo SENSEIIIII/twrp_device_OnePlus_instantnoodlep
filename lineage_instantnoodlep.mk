@@ -16,7 +16,7 @@ $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Extras
-EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
