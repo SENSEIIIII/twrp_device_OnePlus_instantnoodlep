@@ -11,7 +11,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER="1"
 export LC_ALL="C"
 export TARGET_DEVICE_ALT="instantnoodle, instantnoodlep, OnePlus8Pro, OnePlus8"
-export OF_TARGET_DEVICES="instantnoodle, instantnoodlep, OnePlus8Pro, OnePlus8"
+export FOX_TARGET_DEVICES="instantnoodle, instantnoodlep, OnePlus8Pro, OnePlus8"
 
 # Use magisk boot for patching
 export OF_USE_MAGISKBOOT=1
@@ -19,7 +19,7 @@ export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 
 # We have a/b partitions
-export OF_AB_DEVICE="1"
+export FOX_AB_DEVICE="1"
 
 # Screen specifications
 #export OF_SCREEN_H=1920
@@ -43,11 +43,10 @@ export OF_RUN_POST_FORMAT_PROCESS=1
 # OTA for custom ROMs
 export OF_SUPPORT_ALL_PAYLOAD_OTA_UPDATES=1
 export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 
 # OTA
 export OF_KEEP_DM_VERITY=1
-export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
+export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=0
 export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=0
@@ -71,7 +70,8 @@ export FOX_USE_TAR_BINARY="1"
 export FOX_ASH_IS_BASH="1"
 export FOX_REPLACE_BUSYBOX_PS="1"
 export FOX_USE_BASH_SHELL="1"
-export FOX_USE_LZMA_COMPRESSION="1"
+export OF_USE_LZMA_COMPRESSION="1"
 export FOX_USE_NANO_EDITOR="1"
 export OF_DONT_KEEP_LOG_HISTORY="1"
 export OF_NO_SPLASH_CHANGE="1"
+export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
